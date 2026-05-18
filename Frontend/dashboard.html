@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>School ERP</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+  <h2>School ERP</h2>
+
+  <ul>
+    <li>Dashboard</li>
+    <li>Students</li>
+    <li>Fees</li>
+    <li>Payments</li>
+    <li>Logout</li>
+  </ul>
+
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Admin Dashboard</h1>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Total Students</h3>
+      <p id="totalStudents">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Collection</h3>
+      <p id="totalCollection">₹0</p>
+    </div>
+
+    <div class="card">
+      <h3>Pending Fees</h3>
+      <p id="pendingFees">₹0</p>
+    </div>
+
+  </div>
+
+  <div class="form-section">
+
+    <h2>Create Student</h2>
+
+    <div class="form-grid">
+
+      <input
+        type="text"
+        id="studentName"
+        placeholder="Student Name"
+      >
+
+      <select id="studentClass">
+        <option>Class 1</option>
+        <option>Class 2</option>
+        <option>Class 3</option>
+        <option>Class 4</option>
+        <option>Class 5</option>
+      </select>
+
+      <input
+        type="text"
+        id="studentId"
+        placeholder="Student ID"
+      >
+
+      <input
+        type="password"
+        id="studentPassword"
+        placeholder="Password"
+      >
+
+    </div>
+
+    <button onclick="createStudent()">
+      Create Student
+    </button>
+
+  </div>
+
+  <div class="table-section">
+
+    <h2>All Students</h2>
+
+    <table>
+
+      <thead>
+
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Student ID</th>
+          <th>Total Fees</th>
+        </tr>
+
+      </thead>
+
+      <tbody id="studentTable"></tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School ERP</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+  <div class="login-box">
+
+    <h1>School ERP</h1>
+
+    <div class="tabs">
+      <button onclick="showAdmin()">Admin</button>
+      <button onclick="showStudent()">Student</button>
+    </div>
+
+    <div id="adminLogin">
+
+      <input
+        type="text"
+        id="adminUser"
+        placeholder="Admin Username"
+      >
+
+      <input
+        type="password"
+        id="adminPass"
+        placeholder="Admin Password"
+      >
+
+      <button onclick="adminLogin()">
+        Admin Login
+      </button>
+
+    </div>
+
+    <div id="studentLogin" style="display:none;">
+
+      <input
+        type="text"
+        id="studentId"
+        placeholder="Student ID"
+      >
+
+      <input
+        type="password"
+        id="studentPassword"
+        placeholder="Password"
+      >
+
+      <button onclick="studentLogin()">
+        Student Login
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
